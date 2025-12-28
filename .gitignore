@@ -1,0 +1,99 @@
+# ----------------------------------------
+# Python general
+# ----------------------------------------
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.dll
+*.dylib
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.cache
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# ----------------------------------------
+# Build / packaging artifacts
+# ----------------------------------------
+build/
+dist/
+wheelhouse/
+*.egg-info/
+*.egg
+.eggs/
+
+# Built wheels from cibuildwheel
+wheelhouse/
+
+# sdists
+*.tar.gz
+
+# ----------------------------------------
+# C++ build artifacts (pybind11, cmake, etc.)
+# ----------------------------------------
+*.o
+*.obj
+*.a
+*.lib
+*.mod
+*.exp
+*.pdb
+*.ilk
+*.manifest
+
+# CMake artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake-build-*/
+Makefile
+cmake_install.cmake
+
+# Ninja build system
+*.ninja
+.ninja_deps
+.ninja_log
+
+# ----------------------------------------
+# IDE / Editor settings
+# ----------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ----------------------------------------
+# macOS system files
+# ----------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+*.plist
+
+# macOS Resource Forks
+._*
+
+# ----------------------------------------
+# Linux system files
+# ----------------------------------------
+*.out
+
+# ----------------------------------------
+# Logs
+# ----------------------------------------
+*.log
+
+# ----------------------------------------
+# Temporary files
+# ----------------------------------------
+tmp/
+temp/
+*~

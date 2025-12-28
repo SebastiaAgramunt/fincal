@@ -1,0 +1,61 @@
+[project]
+name = "fincal"
+version = "0.1.0"
+description = "A financial calculations package"
+authors = [
+    { name = "Sebastia Agramunt Puig", email = "contact@agramunt.me" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = ["example", "setuptools", "pyproject"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9,<3.13"
+dependencies = [
+    "matplotlib>=3.9.4",
+    "numpy>=1.18",
+    "pandas>=2.3.3",
+]
+
+[project.urls]
+"Homepage" = "https://example.com"
+"Repository" = "https://github.com/example/mypackage"
+
+[project.scripts]
+mortgage-gui = "gui:main"
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 99
+
+[tool.ruff.lint]
+select = [
+    # Pyflakes
+    "F",
+    # Pycodestyle & Warnings
+    "E",
+    "W",
+    # isort for unsorted imports
+    "I001",
+]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = 20
+
+[tool.mypy]
+python_version = "3.13"
+ignore_missing_imports = true
+exclude = "^(build/|\\.venv/)"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
